@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--giving titile to webpage-->
+	<title>My Portfolio</title>
+	<!-- providing meta tag-->
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<!-- linking the external css-->
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<style type="text/css">
+		*
+		/* style h1*/
+		h1{
+ 			color: #fff; font-size: 37px; font-family: Franklin Gothic Book ; font-size: 50px; color: #FFCE2B;
+ 		}
+ 		/* style class mySlides*/
+		.mySlides {display: none}
+
+		/* style image*/
+		img {vertical-align: middle; width: 500px; height: 600px;}
+
+		/* style class slideshow container*/
+		.slideshow-container {
+		  max-width: 85%;
+		  position: relative;
+		  margin: auto;
+		  box-shadow: 5px 5px 10px black;
+		}
+		/* style class prev and next*/
+		.prev, .next {
+		  cursor: pointer;
+		  position: absolute;
+		  top: 50%;
+		  width: auto;
+		  padding: 16px;
+		  margin-top: -22px;
+		  color: white;
+		  font-weight: bold;
+		  font-size: 18px;
+		  transition: 0.6s ease;
+		  border-radius: 0 3px 3px 0;
+		  user-select: none;
+		}
+		/* Style class next*/
+		.next {
+		  right: 0;
+		  border-radius: 3px 0 0 3px;
+		}
+		/* Style hover effect*/
+		.prev:hover, .next:hover {
+		  background-color: rgba(0,0,0,0.8);
+		}
+		/* Style class numbertext*/
+		.numbertext {
+		  color: #f2f2f2;
+		  font-size: 12px;
+		  padding: 8px 12px;
+		  position: absolute;
+		  top: 0;
+		}
+		/* Style class fade*/
+		.fade {
+		  -webkit-animation-name: fade;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: fade;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes fade {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+		{box-sizing: border-box}
+		body {font-family: "Lato", sans-serif;}
+ 	
+		/* Style the tab */
+		.tab {
+		  float: left;
+		  margin-left: 111px;
+		  border: 1px solid #ccc;
+		  background-color: #FFCE2B;
+		  width: 27%;
+		  height: 800px;
+		}
+
+		/* Style the buttons inside the tab */
+		.tab button {
+		  display: block;
+		  background-color: inherit;
+		  color: black;
+		  padding: 22px 16px;
+		  width: 100%;
+		  border: none;
+		  outline: none;
+		  text-align: left;
+		  cursor: pointer;
+		  font-size: 19px;
+		}
+
+		/* Change background color of buttons on hover */
+		.tab button:hover {
+		  background-color:#181818;
+		}
+
+		/* Create an active/current "tab button" class */
+		.tab button.active {
+		  background-color: #181818;
+		  color: white;
+		}
+
+		/* Style the tab content */
+		.tabcontent {
+		  float: right;
+
+		  color: #fff;
+		  border: 1px solid #ccc;
+		  width: 58%;
+		  margin-right:108px;
+		  border-left: ;
+		  height: 800px;
+		  display: none;
+
+		}
+
+		/* Clear floats after the tab */
+		.clearfix::after {
+		  content: "";
+		  clear: both;
+		  display: table;
+		}
+		/* Styling tabcontent heading*/
+		.tabcontent h2{
+			text-align: center; font-size: 30px;
+		}
+		/* Styling class blog*/
+		.blog{
+			text-align: center; font-size: 18px; 
+		}
+
+	</style>
+</head>
+<body >
+	<!--creating a wrapper -->
+	<div style="background-color: #A1A1A1; width: 100%; height: 1700px;">
+		<!--providing header tag-->
+		<header>
+			<!--div for providing a logo-->
+			<div class="logo1">
+				<img class="img" style="width:350px ; height: 350px;" src="../images/p.png">	
+
+			</div>
+			<!--creating a navigation bar-->
+			<nav>
+			<div class="nav">
+				<div >
+					<ul>
+						<li><a href="../index.html" class="list_style">Home</a></li>
+						<li class="list">|</li>
+						<li><a href="../pages/CV.html" class="list_style">CV</a></li>
+						<li class="list">|</li>
+						<li><a href="../pages/Blog.html" class="selected_list_style">Blog</a></li>
+						<li class="list">|</li>
+						<li><a href="../pages/Research.html" class="list_style">Research</a></li>
+						<li class="list">|</li>
+						<li><a href="../pages/Contact.html" class="list_style">Contact</a></li>
+						<li class="list">|</li>
+					</ul>
+			 	</div>
+			 </div>
+			</nav>
+			<!--Creating Search Container-->
+			<div class="container">
+				<div >
+					<form  ID="form" roll="Search" >
+						<input  type="search" id="query" name="q" placeholder="Search" aria-label="Search through site content">	
+					</form>
+				</div>
+			</div>
+			
+		</header>
+		<!-- main content-->
+		<main style="margin: 0px; width:100%; height: 1566px; background-color: #F2F3F4;" >
+			<!--Inserting contents of home page-->
+			<div style="background-color: #181818;  width: 100%; height: 371px;">
+				<br><div style="width: 100%; height: 20px; text-align: center;">
+						<h1>ABOUT VARIOUS TECHNOLOGIES</h1>
+					</div><br><br><br>
+					<div class="slideshow-container">
+
+					<div class="mySlides fade">
+					  <div class="numbertext">1 / 4</div>
+					  <img src="../images/tech1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">2 / 4</div>
+					  <img src="../images/tech2.jpeg" style="width:100%">
+					</div>
+
+					<div class="mySlides fade">
+					  <div class="numbertext">3 / 4</div>
+					  <img src="../images/tech3.jpg" style="width:100%">
+					</div>
+					<div class="mySlides fade">
+					  <div class="numbertext">4 / 4</div>
+					  <img src="../images/tech4.jpg" style="width:100%">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+		</div>
+			<div class="tech" style="background-color: #212121;  width: 100%; height: 1195px; margin-bottom: 1px;"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			
+					<div class="tab">
+					  <button class="tablinks" onmouseover="openCity(event, 'Technology')">About Technology</button>
+					  <button class="tablinks" onmouseover="openCity(event, 'Positive')">Positive Impacts of Technology</button>
+					  <button class="tablinks" onmouseover="openCity(event, 'Negative')">Negative Impacts of Technology</button>
+					  <button class="tablinks" onmouseover="openCity(event, 'Overall')">Overall Verdict</button>
+					</div>
+
+					<div id="Technology" class="tabcontent">
+					 <br><h2>About Technology</h2><br>
+					  <p class="blog">Technology is a useful SERVANT but a dangerous MASTER.Today’s technology is a booming market full of exciting and innovative products and new learning opportunities.In Greece, the term technology, a combination of the Greek techn, “art, craft,” and logos, “word, speech,” indicated a discussion on the fine and applied arts. When it initially originated in English in the 17th century, it was used to refer to a discussion of merely the applied arts, but through time, the label came to refer to these “arts” themselves. By the early twentieth century, the phrase had evolved to include a larger variety of methods, processes, and ideas in addition to tools and machines. By the mid-century, technology was described as "the method or activity by which man strives to modify or alter his environment. Technology refers to the practical understanding of using a type' numerous equipment and natural elements. Technology also influences how a species adapts to and exploits its natural surroundings. Technology is an essential byproduct of science and engineering in human civilization. However, numerous technological advancements have expected a significant increase in scientific and engineering knowledge.<br><br>Physics and technology are interrelated. Physics is concerned with theoretical knowledge, whereas technology employs theoretical understanding of physics for practical reasons. Every technology is based on all physical phenomena. For example, the electric electricity we use is created in power plants utilizing the principle of electromagnetic induction.The research in solid state physics led to the development of all electronic gadgets. Thermodynamics is at the foundation of car technology. Radar technology is based on the idea of electromagnetic wave reflection and detection. As a result, physics plays a crucial role in the advancement of humanity and the development of living standards.<br><br>As our lives get more and more connected with technology, we begin to wonder whether this is a good thing or not.  Is technology ultimately beneficial or harmful to society? It's not as simple as stating it's either good or bad. Technology has enormous benefits as well as drawbacks, and it's hard to declare "yes, it's great" or "no, it's bad."Technology has both pros and cons. It's harmful if you use it excessively and for no other reason than to pass the time. However, if you use it for a short time and for the purpose of obtaining information or learning new things, it is not terrible, and the same is true for children. Give youngsters phones or other technological gadgets, but restrict their use and shift their attention to other intresting things.  </p>
+					</div>
+
+					<div id="Positive" class="tabcontent">
+					  <br><h2>Positive Impacts of Technology</h2><br>
+					  <p class="blog">Technology is not good or evil in and of itself. It's all about how people choose to use. Technology's influence and benefits on our lives today cannot be underestimated. The twenty-first century has been called the "Age of Science and Technology" , especially in the context of technological advancements achievements.We're so preoccupied with our daily routines that we never take a time to push the stop button, stand back, and reflect. And if we take the time to think about it, we can see the roles and advantages that technology has had in enhancing human life.Technology has altered every part of our life, from the wrist smartwatches we wear to the automobiles we drive. Here are some of the benefits of technology in our daily lives:</p><p style="float: left; padding-left: 35px; font-size: 18px;"><br>&bull;Ease of Access to Information<br> &bull;Saves Time<br> &bull; Ease of Mobility<br> &bull;Better Communication Means<br>&bull; Innovation In Many Fields<br> &bull;Better Learning Techniques<br> &bull;Artificial Intelligence </p><br><br><br><br><br><br><br><br><br><br><p class="blog">Radios have been replaced by televisions, which have now been converted into "LCDs" and "LEDs" thanks to modern technology. A book and a cup of coffee can be enjoyed in the coziness of one's own bed. All of this is feasible because to airplanes, electric trains, and vehicles that are constantly being improved.The fact that the distance between the United States of America and Australia is roughly 15,187 kilometers demonstrates the necessity of a vehicle. We must realize that it is completely due to the use of technology.Many professions have been processed and modernized as a result of technology. More and healthier food has emerged from better farming practices. The health-care industry has taken full advantage of the technological revolution as well. Artificial intelligence as a revolutionary idea is rapidly developing. Technology  has been used in every aspect imaginable, from our food to our education. People have become so used to technology that they cannot picture life without their smartphone or laptop computer. </p>
+					</div>
+
+					<div id="Negative" class="tabcontent"><br>
+					 <br><h2>Negative Impacts of Technology</h2><br>
+					  <p class="blog">Over the last 20 years, technology has changed the world, but it has not come without a cost. While there are certainly significant advantages to living in a technologically advanced society, we should also consider some of the bad aspects of technology's impact on our lives. Few things can compare to its huge impact on our daily lives.Overuse or reliance on technology can lead to negative psychological consequences such as loneliness, and anxiety.Eye strain and difficulties focusing on crucial activities may be caused by social media and mobile devices, which can cause psychological and physical problems. They might also have a role in more serious health issues like depression.This isn't a problem only for adults either, because teenagers and children also live lives impacted by technology on a daily basis. Nearly everyone has likely experienced this problem to some extent. Overuse of technology may have a greater influence on children and teens in their formative years.Some of the impacts of technology in our life is listed below:</p></p><p style="float: left; padding-left: 35px; font-size: 18px;"><br>&bull;Technology affects our sleeping habits<br> &bull;Technology causes more energy consumption and pollution<br> &bull; Technology separates families<br> &bull; Technology doesn't build the best social skills<br>&bull; It is much easier to be a bully while hidden away online </p><br><br><br><br><br><br><br><br><br><p class="blog">It is tough to survive without technology in our lives. Use of technology should be kept to a minimum to avoid these negative impacts on our life. Encouraging children to read physical books rather than electronic literature. Instead of playing an online game, encourage your youngster to pursue a pastime, such as football. Arrange a family gathering without the use of any modern gadgets. Keeping a gadget like a tablet or a phone at eye level instead sitting on your lap will help you avoid texting.</p>
+					</div>
+
+					<div id="Overall" class="tabcontent">
+					 <br><h2>Overall Verdict</h2><br>
+					  <p class="blog">As a result, we might conclude that technology has both advantages and disadvantages. Technology, according to Christian Lous Lange, is a good servant, but a dangerous master. Technology has brought about a number of changes in our lives. It is vital to the development of the country.Technology may be a blessing or a curse for humans depending on how we use it. If we utilize it properly, it may be a blessing, but if we don't, it can be a curse. As a result, it is in our hands to make it beneficial or dangerous. </p>
+					</div>
+
+					<div class="clearfix"></div>
+
+			</div>
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+
+			function openCity(evt, cityName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		</script>
+		</main>
+		<!--Providing a footer tag-->
+		<footer style="width: 100%; height: 76px;">
+			<!--Creating nav bar for footer-->
+			<div class="img2" >
+				<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><img style="width:60px; height:100%" src="../images/gm.png" ></a>
+				<a href="https://www.facebook.com/" target="_blank"><img style="width:45px; height:45px" src="../images/fb1.png" ></a>
+				<a href="https://www.instagram.com/" target="_blank"><img style="width:85px; height:50px" src="../images/ig.png" ></a>
+				<a href="https://accounts.snapchat.com/accounts/snapcodes" target="_blank"><img style="width:50px; height:50px" src="../images/sc.png" ></a>
+			</div>
+			<div class="is">
+					<p style="color: #000;"> &copy; Islington All Rights Reserved | 2021</p>
+			</div>
+		</footer>
+</body>
+</html>
